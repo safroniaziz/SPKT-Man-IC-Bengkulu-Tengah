@@ -25,11 +25,11 @@ class RedirectIfAuthenticated
             switch ($guard){
                 case 'pimpinan':
                     if (Auth::guard($guard)->check()) {
-                        if (Auth::guard('pimpinan')->user()->level_user == "tu") {
-                            return redirect()->route('tu.dashboard');
+                        if (Auth::guard('pimpinan')->user()->level_user == "kepsek") {
+                            return redirect()->route('kepala_sekolah.dashboard');
                         }
                         else{
-                            return redirect()->route('kepala_sekolah.dashboard');
+                            return redirect()->route('tu.dashboard');
                         }
                     }
                     break;
