@@ -28,7 +28,7 @@ class RedirectIfAuthenticated
                         if (Auth::guard('pimpinan')->user()->level_user == "tu") {
                             return redirect()->route('tu.dashboard');
                         }
-                        elseif (Auth::guard('pimpinan')->user()->level_user == "kepsek") {
+                        else{
                             return redirect()->route('kepala_sekolah.dashboard');
                         }
                     }
