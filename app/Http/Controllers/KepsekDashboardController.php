@@ -12,7 +12,7 @@ class KepsekDashboardController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth:pimpinan');
+        $this->middleware(['auth:pimpinan','isKepsek']);
     }
     
     public function dashboard(){

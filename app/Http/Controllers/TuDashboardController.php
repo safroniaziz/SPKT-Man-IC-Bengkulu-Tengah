@@ -11,7 +11,7 @@ class TuDashboardController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth:pimpinan');
+        $this->middleware(['auth:pimpinan','isTu']);
     }
     
     public function dashboard(){
