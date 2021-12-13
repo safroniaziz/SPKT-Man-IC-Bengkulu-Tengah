@@ -22,7 +22,7 @@
                         </ul>
                     </div>
                     @else
-                    <h6>Form Login Guru & Karyawan</h6>
+                    <h6>Form Login Tendik</h6>
                     <p style="text-align:center; margin-bottom:20px;">Sistem Pelaporan Kegiatan Harian<br> Tendik Oleh Pimpinan</p>
                 @endif
                 <form method="post" action="{{ route('login') }}">
