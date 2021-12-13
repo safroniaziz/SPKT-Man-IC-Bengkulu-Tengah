@@ -18,6 +18,7 @@ class User extends Authenticatable
      */
     protected $table = 'tbpegawai';
     protected $primaryKey = 'pegNip';
+    public $incrementing = false;
     /**
      * The attributes that are mass assignable.
      *
