@@ -73,4 +73,18 @@ class TendikDashboardController extends Controller
         );
         return redirect()->route('tendik.dashboard')->with($notification);
     }
+
+    public function riwayatKegiatan(){
+        return view('tendik.riwayat_kegiatan');
+    }
+
+    public function cariRiwayat(Request $request){
+        $this->validate($request, [
+            'tanggal_awal'  =>  'required',
+            'tanggal_akhir'  =>  'required',
+        ]);
+
+        $laporans = KegiatanTendik::orWhereBetween('kegTgl', [$request->tanggal_awal, $request->tanggal_akhir])->get();
+        return view('tendik.riwayat_kegiatan',compact('laporans'));
+    }
 }

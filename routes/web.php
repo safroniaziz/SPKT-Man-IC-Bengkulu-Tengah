@@ -31,6 +31,8 @@ Route::group(['prefix'  => 'tendik/'],function(){
     Route::get('/',[TendikDashboardController::class, 'dashboard'])->name('tendik.dashboard');
     Route::post('/',[TendikDashboardController::class, 'post'])->name('tendik.post');
     Route::patch('{kegId}/',[TendikDashboardController::class, 'update'])->name('tendik.update');
+    Route::get('/riwayat_kegiatan',[TendikDashboardController::class, 'riwayatKegiatan'])->name('tendik.riwayat_kegiatan');
+    Route::get('/cari_riwayat',[TendikDashboardController::class, 'cariRiwayat'])->name('tendik.cari_riwayat');
 });
 
 Route::group(['prefix'  => ''],function(){

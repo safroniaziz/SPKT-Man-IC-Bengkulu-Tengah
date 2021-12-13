@@ -60,6 +60,24 @@
                             @endif
                         </textarea>
                     </div>
+
+                    <div class="form-group col-md-12" id="kegInput">
+                        <label for="">Komentar Kepala Tata Usaha :</label>
+                        <textarea name="kegTendik" id="komenTu" disabled class="form-control" cols="30" rows="10">
+                            @if (!empty($kegiatan))
+                                {!! $kegiatan->kegSaranKatu !!}
+                            @endif
+                        </textarea>
+                    </div>
+
+                    <div class="form-group col-md-12" id="kegInput">
+                        <label for="">Komentar Kepala Sekolah :</label>
+                        <textarea name="kegTendik" id="komenKepsek" disabled class="form-control" cols="30" rows="10">
+                            @if (!empty($kegiatan))
+                                {!! $kegiatan->kegSaranKepsek !!}
+                            @endif
+                        </textarea>
+                    </div>
                     <div class="col-md-12" style="text-align: center;" id="btnSimpan">
                         <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-check-circle"></i>&nbsp; Simpan Kegiatan</button>
                         <button type="reset" class="btn btn-danger btn-sm"><i class="fa fa-close"></i>&nbsp; Reset</button>
@@ -73,13 +91,13 @@
 @endsection
 
 @push('scripts')
-    <script src="{{asset('assets/ckeditor/ckeditor.js')}}"></script>
-    <script>
-        var konten = document.getElementById("kegTendik");
-            CKEDITOR.replace(konten,{
-            language:'en-gb'
-        });
-        CKEDITOR.config.allowedContent = true;
+<script src="{{asset('assets/ckeditor/ckeditor.js')}}"></script>
+<script>
 
+    CKEDITOR.replace( 'kegTendik' );
+    CKEDITOR.replace( 'komenTu' );
+    CKEDITOR.replace( 'komenKepsek' );
+
+    CKEDITOR.config.allowedContent = true;
     </script>
 @endpush

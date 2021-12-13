@@ -55,6 +55,7 @@
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
               <ul class="nav navbar-nav">
                 <li class=""><a href=""><i class="fa fa-home"></i>&nbsp;Dashboard <span class="sr-only">(current)</span></a></li>
+                <li class=""><a href="{{ route('tendik.riwayat_kegiatan') }}"><i class="fa fa-history"></i>&nbsp;Riwayat Kegiatan <span class="sr-only"></span></a></li>
                 {{-- <li class=""><a href=""><i class="fa fa-search"></i>&nbsp;Cari Buku</a></li> --}}
               </ul>
             </div>
