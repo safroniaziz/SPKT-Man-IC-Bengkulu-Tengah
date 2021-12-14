@@ -54,8 +54,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class=""><a href=""><i class="fa fa-home"></i>&nbsp;Dashboard <span class="sr-only">(current)</span></a></li>
-                <li class=""><a href="{{ route('tendik.riwayat_kegiatan') }}"><i class="fa fa-history"></i>&nbsp;Riwayat Kegiatan <span class="sr-only"></span></a></li>
+                @yield('menu')
                 {{-- <li class=""><a href=""><i class="fa fa-search"></i>&nbsp;Cari Buku</a></li> --}}
               </ul>
             </div>
@@ -112,9 +111,9 @@
   <footer class="main-footer">
     <div class="container">
       <div class="pull-right hidden-xs">
-        <b>Version</b> 2.4.18
+        <b>SPKT</b> MANIC BENTENG
       </div>
-      <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
+      <strong>Copyright &copy; 2021 <a href="https://manicbenteng.sch.id">Man IC Bengkulu Tengah</a>.</strong> All rights
       reserved.
     </div>
     <!-- /.container -->

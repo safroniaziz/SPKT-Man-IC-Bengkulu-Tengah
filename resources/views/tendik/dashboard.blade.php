@@ -1,4 +1,8 @@
 @extends('layouts.layout')
+@section('menu')
+<li class="@if (Route::current()->getName() == "tendik.dashboard") active @endif"><a href="@if (Route::current()->getName() == "tendik.dashboard") {{ route('tendik.dashboard') }} @endif""><i class="fa fa-home"></i>&nbsp;Dashboard <span class="sr-only">(current)</span></a></li>
+<li class="@if (Route::current()->getName() == "tendik.riwayat_kegiatan") active @endif"><a href="{{ route('tendik.riwayat_kegiatan') }}"><i class="fa fa-history"></i>&nbsp;Riwayat Kegiatan <span class="sr-only"></span></a></li>
+@endsection
 @section('content')
     <div class="callout callout-info">
         <h4>Selamat Datang,  <b> {{ Auth::user()->pegNama }}</b></h4>

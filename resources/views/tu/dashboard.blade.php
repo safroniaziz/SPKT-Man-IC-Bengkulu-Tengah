@@ -1,4 +1,7 @@
 @extends('layouts.layout')
+@section('menu')
+    <li class="@if (Route::current()->getName() == "tu.dashboard") active @endif"><a href="{{ route('tu.dashboard') }}"><i class="fa fa-home"></i>&nbsp;Dashboard <span class="sr-only">(current)</span></a></li>
+@endsection
 @section('content')
     <div class="callout callout-info">
         <h4>Selamat Datang,  <b> </b></h4>

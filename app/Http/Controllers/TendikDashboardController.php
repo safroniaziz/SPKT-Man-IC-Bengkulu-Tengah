@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use PDF;
 
 class TendikDashboardController extends Controller
 {
@@ -83,8 +84,10 @@ class TendikDashboardController extends Controller
             'tanggal_awal'  =>  'required',
             'tanggal_akhir'  =>  'required',
         ]);
-
+        $model = $request->all();
         $laporans = KegiatanTendik::orWhereBetween('kegTgl', [$request->tanggal_awal, $request->tanggal_akhir])->get();
-        return view('tendik.riwayat_kegiatan',compact('laporans'));
+        $pdf = PDF::loadView('tendik/laporan',compact('laporans','model'));
+        $pdf->setPaper('a4', 'portrait');
+        return $pdf->stream();
     }
 }

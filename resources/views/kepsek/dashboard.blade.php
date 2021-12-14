@@ -1,4 +1,7 @@
 @extends('layouts.layout')
+@section('menu')
+    <li class="@if (Route::current()->getName() == "kepsek.dashboard") active @endif"><a href="{{ route('kepsek.dashboard') }}"><i class="fa fa-home"></i>&nbsp;Dashboard <span class="sr-only">(current)</span></a></li>
+@endsection
 @push('styles')
     <style>
         .loader {
