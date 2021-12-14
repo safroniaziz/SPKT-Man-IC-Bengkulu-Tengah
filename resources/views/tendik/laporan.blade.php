@@ -34,7 +34,7 @@
 <body>
     <table id="header" cellspacing="0" cellpadding="0" style="width:100%" class="top">
         <tr >
-            <td rowspan="5" style="width: 5% !important;" class="logo-koperasi"><img src="{{ asset('assets/images/logo.png') }}" style="width: 75px !important"></td>
+            {{-- <td rowspan="5" style="width: 5% !important;" class="logo-koperasi"><img src="{{ asset('assets/images/logo.png') }}" style="width: 75px !important"></td> --}}
             <td style="width:95% !important;" align="center"><b>KEMENTERIAN AGAMA REPUBLIK INDONESIA</b></td>
         </tr>
         <tr style="width: 100%">
