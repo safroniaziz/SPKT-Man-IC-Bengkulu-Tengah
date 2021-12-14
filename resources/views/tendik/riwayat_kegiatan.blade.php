@@ -25,11 +25,17 @@
                     <div class="form-group col-md-6">
                         <label for="">Pilih Tanggal Awal</label>
                         <input type="date" name="tanggal_awal" class="form-control">
+                        @if ($errors->has('tanggal_awal'))
+                            <small class="form-text text-danger">{{ $errors->first('tanggal_awal') }}</small>
+                        @endif
                     </div>
 
                     <div class="form-group col-md-6">
                         <label for="">Pilih Tanggal Akhir</label>
                         <input type="date" name="tanggal_akhir" class="form-control">
+                        @if ($errors->has('tanggal_akhir'))
+                            <small class="form-text text-danger">{{ $errors->first('tanggal_akhir') }}</small>
+                        @endif
                     </div>
 
                     <div class="col-md-12">

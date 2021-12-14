@@ -80,10 +80,18 @@ class TendikDashboardController extends Controller
     }
 
     public function cariRiwayat(Request $request){
+        $messages = [
+            'required' => ':attribute harus diisi',
+        ];
+        $attributes = [
+            'tanggal_awal'   =>  'Tanggal Awal',
+            'tanggal_akhir'   =>  'Tanggal Akhir',
+        ];
         $this->validate($request, [
             'tanggal_awal'  =>  'required',
             'tanggal_akhir'  =>  'required',
-        ]);
+        ],$messages,$attributes);
+
         $model = $request->all();
         $laporans = KegiatanTendik::where('kegNip',Auth::user()->pegNip)->whereBetween('kegTgl', [$request->tanggal_awal, $request->tanggal_akhir])->get();
         $pdf = PDF::loadView('tendik/laporan',compact('laporans','model'));
