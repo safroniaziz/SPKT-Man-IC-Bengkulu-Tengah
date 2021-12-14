@@ -85,7 +85,7 @@ class TendikDashboardController extends Controller
             'tanggal_akhir'  =>  'required',
         ]);
         $model = $request->all();
-        $laporans = KegiatanTendik::orWhereBetween('kegTgl', [$request->tanggal_awal, $request->tanggal_akhir])->get();
+        $laporans = KegiatanTendik::whereBetween('kegTgl', [$request->tanggal_awal, $request->tanggal_akhir])->get();
         $pdf = PDF::loadView('tendik/laporan',compact('laporans','model'));
         $pdf->setPaper('a4', 'portrait');
         return $pdf->stream();
