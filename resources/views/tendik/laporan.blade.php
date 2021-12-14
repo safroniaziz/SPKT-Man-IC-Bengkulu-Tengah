@@ -31,7 +31,7 @@
     <table id="header" cellspacing="0" cellpadding="0" style="width:100%;border: none !important;border-collapse: collapse;" class="top">
         <tr >
             {{-- <object id="svg1" data="{{ asset('assets/images/logo.svg') }}" type="image/svg+xml"></object> --}}
-            <td rowspan="5" style="width: 5% !important;" class="logo-koperasi"><img src="{{ asset('assets/images/logo.svg') }}" style="width: 100px !important"></td>
+            {{-- <td rowspan="5" style="width: 5% !important;" class="logo-koperasi"><img src="{{ asset('assets/images/logo.svg') }}" style="width: 100px !important"></td> --}}
             <td style="width:95% !important;" align="center"><b>KEMENTERIAN AGAMA REPUBLIK INDONESIA</b></td>
         </tr>
         <tr style="width: 100%">
