@@ -1,0 +1,294 @@
+body {
+   font-family: "Times New Roman", Times, Verdana;
+   /*background-color: #C0C0C0;*/
+   font-size: 10pt;
+   margin: 0;
+   padding: 0;
+}
+
+p {
+   margin: 0;
+   padding: 0;
+}
+
+#kementrian {
+        font-size:150%!important;
+}
+
+#container {
+   margin: 0 auto;
+   padding: 10px;
+   width: 210mm;
+   background-color: #fff;
+   /*height: 280mm;*/
+   /*overflow: hidden;*/
+   /*border-bottom: 1px solid #c0c0c0;*/
+}
+
+#header {
+ /*  text-align: center; */
+   margin-bottom: 15px;
+}
+
+#header h2, #header h3, #header h4 {
+   margin: 0;
+   padding: 0;
+   font-weight: normal;
+}
+
+#header h2 {
+   font-size: 18pt;
+   text-transform:uppercase;
+   font-weight: bold;
+}
+
+#header h3 {
+   font-size: 12pt;
+   text-transform:uppercase;
+}
+
+#header h4 {
+   font-size: 10pt;
+}
+
+#header hr {
+   border: 2px solid #ododod;
+}
+
+#header a {
+	display: block;
+	text-align: left;
+	/*float: left;*/
+	text-decoration: underline;
+	/*display: none;*/
+	z-index: 100;
+}
+
+#header a:hover {
+	text-decoration: none;
+}
+#logo_unib{
+	display: block;
+	float: left;
+	/*padding-left: 90px;*/
+}
+#judul_unib{
+	display:block;
+	text-align: center;
+}
+#logo_ugm {
+   /*text-align: center;*/
+   margin: 0 auto;
+   width: 45px;
+   height: 45px;
+   display: block;
+}
+
+#header img {
+   width: 80px;
+   height: 80px;
+}
+
+#nomor_transkrip {
+   text-align: center;
+   margin-bottom: 5px;
+}
+
+#nomor_transkrip h1 {
+   margin: 0;
+   padding: 0;
+   font-size: 14pt;
+}
+
+#nomor_transkrip h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 12pt;
+}
+
+#nomor_transkrip hr {
+   margin: 0 auto;
+   padding: 0;
+   width: 450px;
+   border: 1px solid #ododod;
+}
+
+#kata_kata {
+   text-align: justified;
+   margin-bottom: 5px;
+}
+
+#kata_kata h1 {
+   margin: 0;
+   padding: 0;
+   font-size: 14pt;
+}
+
+#kata_kata h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 12pt;
+}
+
+#kata_kata hr {
+   margin: 0 auto;
+   padding: 0;
+   width: 450px;
+   border: 1px solid #ododod;
+}
+
+
+#info_mhs{
+   margin-bottom: 10px;
+}
+
+#info_mhs table {
+   margin: 0;
+   padding: 0;
+}
+
+#info_mhs th {
+   text-align: left;
+   font-weight: bold;
+   
+}
+
+#info_mhs td {
+   width: 800px;
+   text-align : justify;
+}
+
+#table_transkrip{
+   margin-bottom: 5px;
+}
+
+#table_transkrip table {
+   /*border: 1px solid #000;*/
+   font-family: Times;
+   border: none;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+#table_transkrip th {
+   border: 1px solid #000;
+   text-align: center;
+   padding: 0 5px;
+}
+
+#table_transkrip td {
+   border: 1px solid #000;
+   text-align: center;
+   font-size: 10pt;
+   vertical-align: top;
+}
+
+
+#table_transkrip .border-left {
+   border: none;
+}
+
+#table_transkrip .border-right {
+   text-align: left;
+   border-top: none;
+   border-left: none;
+   border-bottom: none;
+}
+
+#judul-skripsi {
+   margin-bottom: 10px;
+}
+
+#judul-skripsi table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+#judul-skripsi th {
+   font-weight: normal;
+   text-align: left;
+   width: 95px;
+   vertical-align: top;
+}
+
+#pembimbing {
+   float: left;
+   width: 380px;
+}
+
+#pembimbing table {
+   border-collapse: collapse;
+} 
+
+#pembimbing th {
+   text-align: left;
+   font-weight: normal;
+   vertical-align: top;
+}
+
+#pembimbing td {
+   vertical-align: top;
+   /*width: 250px;*/
+}
+
+#table_right {
+   float: right;
+}
+
+#table_right table {
+   border-collapse: collapse;
+}
+
+#table_right th {
+   text-align: left;
+   font-weight: normal;
+}
+
+#table_right td {
+   width: 250px;
+}
+
+div.nobreak .hidden {
+   visibility: hidden;
+   display: none;
+}
+
+div.page-break /*.hidden */{
+   visibility: visible;
+   margin: 10px 0px 10px 0px;
+}
+
+/*
+#info_studi {
+   float: right;
+   margin-bottom: 12pt;
+}
+
+#info_studi table {
+   border-collapse: collapse;
+}
+
+#info_studi th {
+   text-align: left;
+   font-weight: normal;
+}
+
+#info_studi td {
+   width: 250px;
+}
+
+#pengesah{
+   clear: both;
+   float: right;
+}
+
+#pengesah table {
+   border-collapse: collapse;
+}
+
+#pengesah th {
+   text-align: left;
+   font-weight: normal;
+   width: 325px;
+}
+*/

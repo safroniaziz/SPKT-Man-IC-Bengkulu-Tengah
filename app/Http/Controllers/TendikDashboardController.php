@@ -93,9 +93,11 @@ class TendikDashboardController extends Controller
         ],$messages,$attributes);
 
         $model = $request->all();
+        $dt = Carbon::now();
+        $today = $dt->toDateString();
         $laporans = KegiatanTendik::where('kegNip',Auth::user()->pegNip)->whereBetween('kegTgl', [$request->tanggal_awal, $request->tanggal_akhir])->get();
-        $pdf = PDF::loadView('tendik/laporan',compact('laporans','model'));
-        $pdf->setPaper('a4', 'portrait');
-        return $pdf->stream();
+        return view('tendik/laporan',compact('laporans','model','today'));
+        // $pdf->setPaper('a4', 'portrait');
+        // return $pdf->stream();
     }
 }
