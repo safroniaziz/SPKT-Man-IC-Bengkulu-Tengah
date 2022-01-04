@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
-  <title>SKPT MAN IC Bengkulu Tengah</title>
+  <title>SPKT MANIC Bengkulu Tengah</title>
   <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
